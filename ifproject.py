@@ -1,27 +1,29 @@
-#! usr/bin/env python3:
+#!/usr/bin/env python3
 import random
+
+distance_left= 580
 shot_count= 0
 # start
 print("Choose your club wisely for this course. It is a par 5 with 580 yards.\n")
 
 # first shot
-club_choice = input("What is your first club choice: driver, woods, or hybrid?\n")
+shot_choice= ""
+while shot_choice not in ["driver","woods","hybrid"]:
+    shot_choice = input("What is your first club choice: driver, woods, or hybrid?\n")
 
-if club_choice == "driver":
+if shot_choice  == "driver":
     distance = random.randint(270, 320)
     location = random.choice(["fairway", "rough"])
     print(f"You hit your driver {distance} yards into the {location}.\n")
     shot_count += 1
 
-elif club_choice == "woods" or club_choice == "hybrid":
+elif shot_choice in ["woods","hybrid"]:
     distance = random.randint(200, 250)
     location = random.choice(["fairway", "rough"])
     print(f"You hit your {club_choice} {distance} yards down the {location}.\n")
     shot_count += 1
 
-else:
-    print("Invalid club choice. Please choose driver, woods, or hybrid.")
-    exit()
+distance_left -= distance
 
 # rough situation
 if location == "rough":
@@ -45,7 +47,7 @@ elif second_choice == "iron 3" or second_choice == "3":
 
 else:
     print("Invalid club choice. Please choose hybrid or iron 3.\n")
-    exit()
+
 
 distance_left -= second_distance
 
@@ -67,7 +69,7 @@ if distance_left > 100:
 
     else:
         print("Invalid club choice. Please choose iron5 or iron7.\n")
-        exit()        
+               
 
 elif distance_left <= 100 and distance_left > 10:
     print(f"You have {distance_left} yards left to the green.\n")
