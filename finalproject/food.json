@@ -1,0 +1,105 @@
+[
+  {
+    "food": "ramen",
+    "price": 10,
+    "ingredient": [
+      "soup",
+      "noodle"
+    ]
+  },
+  {
+    "food": "kbbq",
+    "price": 40,
+    "ingredient": [
+      "meat",
+      "grill"
+    ]
+  },
+  {
+    "food": "tacos",
+    "price": 8,
+    "ingredient": [
+      "tortillas",
+      "meat",
+      "beans",
+      "salsa",
+      "guacamole"
+    ]
+  },
+  {
+    "food": "pasta",
+    "price": 12,
+    "ingredient": [
+      "noodles",
+      "sauce",
+      "cheese",
+      "meat",
+      "vegetables"
+    ]
+  },
+  {
+    "food": "burger",
+    "price": 10,
+    "ingredient": [
+      "bun",
+      "patty",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "ketchup",
+      "mayonnaise"
+    ]
+  },
+  {
+    "food": "fried chicken",
+    "price": 18,
+    "ingredient": [
+      "chicken",
+      "flour",
+      "spices",
+      "oil"
+    ]
+  },
+  {
+    "food": "sushi burrito",
+    "price": 14,
+    "ingredient": [
+      "rice",
+      "seaweed",
+      "fish",
+      "vegetables",
+      "sauce"
+    ]
+  },
+  {
+    "food": "ramen burger",
+    "price": 16,
+    "ingredient": [
+      "bun",
+      "patty",
+      "ramen noodles",
+      "lettuce",
+      "tomato",
+      "sauce"
+    ]
+  },
+  {
+    "food": "steak",
+    "price": 30,
+    "ingredient": [
+      "beef",
+      "seasonings",
+      "butter"
+    ]
+  },
+  {
+    "food": "lobster",
+    "price": 50,
+    "ingredient": [
+      "lobster",
+      "butter",
+      "lemon",
+      "seasonings"
+    ]
+  }
+]
