@@ -44,6 +44,7 @@ rooms = {
                 },
             'Dining Room' : {
                   'west' : 'Hall',
+                  'north' : 'Guest Room',
                   'south': 'Garden',
                   'item' : ['potion']
                },
@@ -51,11 +52,15 @@ rooms = {
                   'north' : 'Dining Room'
                },
             'Master Bedroom': {
-                  'north' : 'Hall',
-                  'east'  : 'Garden',
+                  'south' : 'Hall',
+                  'east'  : 'Guest Room',
                   'item'  : ['gun','bullet','sword'],
                   'door'  : 'Trapdoor'
                   },
+            'Guest Room' : {
+                  'south' : 'Dining Room',
+                  'west'  : 'Master Bedroom',
+            }
          }
 
 #start the player in the Hall
