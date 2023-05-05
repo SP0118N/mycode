@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Punch Man Food GIFs</title>
+    <style>
+        body {
+            background-image: url('https://media4.giphy.com/media/arbHBoiUWUgmc/giphy.gif?cid=ecf05e473kpj22vmq9jr6kfas85noxe203qypz1bfjmz4sg6&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        form {
+            margin-bottom: 1rem;
+        }
+
+        .food_label {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        .food_input {
+            margin-bottom:0.5rem;
+        }
+     </style>
+</head>
+<body>
+    <div class="container">
+        <form id="food-form" action="/food", method="POST">
+            <label for="food_name" class= "food-label">Enter a food name:</label><br>
+            <input type="text" name="food_name" id="food-name" class="food_input"><br>
+            <button type="submit" class="food-button">Show The Food</button>
+            {% if message %}
+                <p>{{ message }}</p>
+            {% endif %}
+        </form>
+        <div id="gif-display"></div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final Project</title>
+</head>
+<body>
+    <h1> Food Details</h1>
+    <p>Here is a photo of {{ f["food"] }}</p>
+    <div>
+        <container>
+            {% if image %}
+                <img src="{{image}}" alt="{{f["food"]}}">
+            {% endif %}
+        </container>
+    </div>
+    <div>
+        <p> Price of that food is ${{f["price"]}}</p>
+    </div>
+    <div>
+        <p> Ingredients are </p>
+        {% for ingredient in f["ingredient"] %}
+        <li>{{ loop.index }}. {{ ingredient }} </li>
+        {% endfor %}
+        
+    </div>
+</body>
+</html>
+
